@@ -3,4 +3,4 @@ url="https://api.apify.com/v2/key-value-stores/${APIFY_DEFAULT_KEY_VALUE_STORE_I
 echo "$url"
 exakat init -p tmpprj -R https://github.com/jeroenherczeg/rector-test.git -v
 exakat project -p tmpprj -v
-ls /usr/src/exakat/tmpprj/
+ls /usr/src/exakat/projects/tmpprj/
