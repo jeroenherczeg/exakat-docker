@@ -53,4 +53,7 @@ RUN \
     rm -rf /var/lib/apt/lists/* && \
     exakat doctor
 
-CMD [ "exakat", "doctor" ]
+COPY run.sh /usr/src/exakat/
+RUN chmod a+x /usr/src/exakat/run.sh
+
+CMD [ "run.sh" ]
